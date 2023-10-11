@@ -1,0 +1,43 @@
+{
+  "name": "@haixing_hu/vite-plugin-babel",
+  "version": "1.0.0",
+  "description": "A simple vite plugin to support Babel.",
+  "author": "Haixing Hu",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haixing-Hu/vite-plugin-babel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Haixing-Hu/vite-plugin-babel/issues"
+  },
+  "homepage": "https://github.com/Haixing-Hu/vite-plugin-babel",
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "babel"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "clean": "rm -rvf dist",
+    "build": "rollup -c rollup.config.js",
+    "deploy": "yarn && yarn build && npm publish --registry='https://registry.npmjs.com/' --access public"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "rollup": "^4.0.2"
+  },
+  "packageManager": "yarn@3.6.4"
+}
