@@ -16,9 +16,9 @@ promises to infuse [Babel] support into [Vite], our experience revealed challeng
 when handling [Vue] Single File Components (SFCs). Upon a close inspection of its
 source code, it became apparent that for accurate transpilation, it was necessary
 to apply [Babel] after [vite-plugin-vue] had processed the source code.
-Interestingly, owlsdepartment's plugin calls the esbuildPluginBabel() during its
-config() stage, and the esbuildPluginBabel() attempts to transform the source
-code within its setup() function. This sequence led to the transpilation by [Babel]
+Interestingly, owlsdepartment's plugin calls the `esbuildPluginBabel()` during its
+`config()` stage, and the `esbuildPluginBabel()` attempts to transform the source
+code within its `setup()` function. This sequence led to the transpilation by [Babel]
 being applied before [vite-plugin-vue] had the opportunity to process it.
 Hence, we made the decision to develop a new plugin to correctly manage this process.
 
