@@ -1,6 +1,6 @@
 {
   "name": "@haixing_hu/vite-plugin-babel",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "A simple vite plugin to support Babel.",
   "author": "Haixing Hu",
   "license": "Apache-2.0",
