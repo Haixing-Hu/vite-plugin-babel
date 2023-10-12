@@ -19,6 +19,7 @@ const babelPlugin = (options = {}) => ({
       config.filename = id;
       return babel.transform(src, config);
     }
+    return null;
   },
 });
 
