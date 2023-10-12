@@ -14,6 +14,9 @@ jobs:
           pkg-manager: yarn
           with-cache: true
       - run:
+          name: Lint
+          command: yarn lint
+      - run:
           name: Build the library
           command: yarn build
 
