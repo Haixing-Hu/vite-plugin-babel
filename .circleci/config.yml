@@ -19,5 +19,9 @@ jobs:
 
 workflows:
   build_workflow:
+    triggers:
+      filters:
+        branches:
+          only: master
     jobs:
       - build
