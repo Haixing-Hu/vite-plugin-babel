@@ -20,8 +20,9 @@ jobs:
 workflows:
   build_workflow:
     triggers:
-      filters:
-        branches:
-          only: master
+      - schedule:
+          filters:
+            branches:
+              only: master
     jobs:
       - build
