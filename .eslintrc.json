@@ -1,0 +1,3 @@
+{
+  "extends": [ "@haixing_hu/eslint-config" ]
+}
