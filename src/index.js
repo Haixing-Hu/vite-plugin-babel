@@ -12,6 +12,7 @@ const DEFAULT_FILTER = /\.(jsx?|vue)$/;
 
 const babelPlugin = (options = {}) => ({
   name: 'vite-plugin-babel',
+  enforce: 'post',
   transform: (src, id) => {
     const config = options.config || {};
     const filter = options.filter || DEFAULT_FILTER;
