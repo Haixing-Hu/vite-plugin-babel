@@ -443,14 +443,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@haixing_hu/eslint-config@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@haixing_hu/eslint-config@npm:1.2.0"
+"@haixing_hu/eslint-config@npm:^1.3.1":
+  version: 1.3.1
+  resolution: "@haixing_hu/eslint-config@npm:1.3.1"
   dependencies:
     eslint: ^8.12.0
     eslint-config-airbnb-base: ^15.0.0
     eslint-plugin-import: ^2.28.1
-  checksum: 05e45ca302d4ccd79117fd5902b30e8afb94a216b1b7bcaf95dde192f95635644f25d5687044ab569eb2758495156d4541b53a10049cea557e95c818175c34ab
+  checksum: 2bb5fffe93032ca43d0fd93e926c0bf5327c5a7a164103657cc57419bbe3aec32f284d380836219b062ab1d9618df28844e6f0dac198c216f00252b5d32d3771
   languageName: node
   linkType: hard
 
@@ -459,7 +459,7 @@ __metadata:
   resolution: "@haixing_hu/vite-plugin-babel@workspace:."
   dependencies:
     "@babel/core": ^7.0.0
-    "@haixing_hu/eslint-config": ^1.2.0
+    "@haixing_hu/eslint-config": ^1.3.1
     esbuild: ^0.19.4
     eslint: ^8.51.0
     eslint-plugin-import: ^2.28.1

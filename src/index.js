@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 //
-//    Copyright (c) 2022 - 2023.
+//    Copyright (c) 2022 - 2024.
 //    Haixing Hu, Qubit Co. Ltd.
 //
 //    All rights reserved.
@@ -18,6 +18,7 @@ const babelPlugin = (options = {}) => ({
     const filter = options.filter || DEFAULT_FILTER;
     if (filter.test(id)) {
       config.filename = id;
+      console.info(`Transforming file ${id} with config:`, config);
       return babel.transform(src, config);
     }
     return null;
