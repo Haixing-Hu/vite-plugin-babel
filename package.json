@@ -26,7 +26,11 @@
     }
   },
   "files": [
-    "/dist"
+    "dist/**/*",
+    "doc/**/*",
+    "LICENSE",
+    "README.md",
+    "README.zh_CN.md"
   ],
   "scripts": {
     "clean": "rm -rvf dist",
