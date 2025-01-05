@@ -1,6 +1,6 @@
 # vite-plugin-babel
 
-[![npm package](https://img.shields.io/npm/v/@haixing_hu/vite-plugin-babel.svg)](https://npmjs.com/package/@haixing_hu/vite-plugin-babel)
+[![npm package](https://img.shields.io/npm/v/@qubit-ltd/vite-plugin-babel.svg)](https://npmjs.com/package/@qubit-ltd/vite-plugin-babel)
 [![License](https://img.shields.io/badge/License-Apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![English Document](https://img.shields.io/badge/Document-English-blue.svg)](README.md)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Haixing-Hu/vite-plugin-babel/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/Haixing-Hu/vite-plugin-babel/tree/master)
@@ -21,13 +21,13 @@ owlsdepartment 的插件在其 `config()` 阶段调用了 `esbuildPluginBabel()`
 您可以使用 `npm` 安装该插件：
 
 ```shell
-npm install --save-dev @haixing_hu/vite-plugin-babel
+npm install --save-dev @qubit-ltd/vite-plugin-babel
 ```
 
 或者使用 `yarn`：
 
 ```shell
-yarn add --dev @haixing_hu/vite-plugin-babel
+yarn add --dev @qubit-ltd/vite-plugin-babel
 ```
 
 ## 使用方法
@@ -35,7 +35,7 @@ yarn add --dev @haixing_hu/vite-plugin-babel
 在你的 [Vite] 配置文件 `vite.config.js` 中引入并使用该插件：
 
 ```js
-import babel from '@haixing_hu/vite-plugin-babel';
+import babel from '@qubit-ltd/vite-plugin-babel';
 
 export default {
   plugins: [
@@ -67,10 +67,10 @@ export default {
 
 首先，我们需要安装 [Babel] 及相关插件：
 ```shell
-yarn add @haixing_hu/vue3-class-component
+yarn add @qubit-ltd/vue3-class-component
 yarn add --dev @babel/core @babel/runtime @babel/preset-env
 yarn add --dev @babel/plugin-proposal-decorators @babel/plugin-transform-class-properties @babel/plugin-transform-runtime
-yarn add --dev @haixing_hu/vite-plugin-babel
+yarn add --dev @qubit-ltd/vite-plugin-babel
 ```
 
 接下来配置 [Vite] 项目的 `vite.config.js` 文件如下：
@@ -78,7 +78,7 @@ yarn add --dev @haixing_hu/vite-plugin-babel
 import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import babel from '@haixing_hu/vite-plugin-babel';
+import babel from '@qubit-ltd/vite-plugin-babel';
 
 export default defineConfig({
   plugins: [
@@ -116,7 +116,7 @@ export default defineConfig({
 import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import babel from '@haixing_hu/vite-plugin-babel';
+import babel from '@qubit-ltd/vite-plugin-babel';
 
 export default defineConfig({
   plugins: [
@@ -144,7 +144,7 @@ export default defineConfig({
 
 此插件采用 Apache 2.0 许可证。详细信息请查阅 [LICENSE](LICENSE) 文件。
 
-[vite-plugin-babel]: https://npmjs.com/package/@haixing_hu/vite-plugin-babel
+[vite-plugin-babel]: https://npmjs.com/package/@qubit-ltd/vite-plugin-babel
 [owlsdepartment 的 vite-plugin-babel]: https://www.npmjs.com/package/vite-plugin-babel
 [vite-plugin-vue]: https://www.npmjs.com/package/@vitejs/plugin-vue
 [Vue]: https://vuejs.org/
