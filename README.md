@@ -1,6 +1,6 @@
 # vite-plugin-babel
 
-[![npm package](https://img.shields.io/npm/v/@haixing_hu/vite-plugin-babel.svg)](https://npmjs.com/package/@haixing_hu/vite-plugin-babel)
+[![npm package](https://img.shields.io/npm/v/@qubit-ltd/vite-plugin-babel.svg)](https://npmjs.com/package/@qubit-ltd/vite-plugin-babel)
 [![License](https://img.shields.io/badge/License-Apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![中文文档](https://img.shields.io/badge/文档-中文版-blue.svg)](README.zh_CN.md)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Haixing-Hu/vite-plugin-babel/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/Haixing-Hu/vite-plugin-babel/tree/master)
@@ -27,13 +27,13 @@ Hence, we made the decision to develop a new plugin to correctly manage this pro
 You can install this plugin using `npm`:
 
 ```shell
-npm install --save-dev @haixing_hu/vite-plugin-babel
+npm install --save-dev @qubit-ltd/vite-plugin-babel
 ```
 
 Or with `yarn`:
 
 ```shell
-yarn add --dev @haixing_hu/vite-plugin-babel
+yarn add --dev @qubit-ltd/vite-plugin-babel
 ```
 
 ## Usage
@@ -41,7 +41,7 @@ yarn add --dev @haixing_hu/vite-plugin-babel
 To use this plugin, import and add it to your [Vite] configuration file `vite.config.js`:
 
 ```js
-import babelPlugin from '@haixing_hu/vite-plugin-babel';
+import babelPlugin from '@qubit-ltd/vite-plugin-babel';
 
 export default {
   plugins: [
@@ -77,10 +77,10 @@ classes, taking advantage of the latest syntax features from the
 First, install [Babel] and related plugins:
 
 ```shell
-yarn add @haixing_hu/vue3-class-component
+yarn add @qubit-ltd/vue3-class-component
 yarn add --dev @babel/core @babel/runtime @babel/preset-env
 yarn add --dev @babel/plugin-proposal-decorators @babel/plugin-transform-class-properties @babel/plugin-transform-runtime
-yarn add --dev @haixing_hu/vite-plugin-babel
+yarn add --dev @qubit-ltd/vite-plugin-babel
 ```
 
 Next, configure your [Vite] project in the `vite.config.js` file as follows:
@@ -89,7 +89,7 @@ Next, configure your [Vite] project in the `vite.config.js` file as follows:
 import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import babel from '@haixing_hu/vite-plugin-babel';
+import babel from '@qubit-ltd/vite-plugin-babel';
 
 export default defineConfig({
   plugins: [
@@ -130,7 +130,7 @@ configuration file and use the default configuration of the
 import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import babel from '@haixing_hu/vite-plugin-babel';
+import babel from '@qubit-ltd/vite-plugin-babel';
 
 export default defineConfig({
   plugins: [
@@ -161,7 +161,7 @@ to open an issue or submit a pull request to the [GitHub repository].
 This plugin is distributed under the Apache 2.0 license. See the [LICENSE](LICENSE) file for more details.
 
 
-[vite-plugin-babel]: https://npmjs.com/package/@haixing_hu/vite-plugin-babel
+[vite-plugin-babel]: https://npmjs.com/package/@qubit-ltd/vite-plugin-babel
 [owlsdepartment's vite-plugin-babel]: https://www.npmjs.com/package/vite-plugin-babel
 [vite-plugin-vue]: https://www.npmjs.com/package/@vitejs/plugin-vue
 [Vue]: https://vuejs.org/
