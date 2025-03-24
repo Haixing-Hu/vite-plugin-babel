@@ -36,7 +36,7 @@
     "clean": "rm -rvf dist",
     "lint": "eslint ./src",
     "build": "node esbuild.mjs",
-    "deploy": "yarn && yarn lint && yarn build && npm publish --registry='https://registry.npmjs.com/' --access public"
+    "deploy": "yarn && yarn lint && yarn build && npm publish --registry='https://npm.qubit.ltd/' --access public"
   },
   "dependencies": {
     "@babel/core": "^7.0.0"
