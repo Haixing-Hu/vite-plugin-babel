@@ -65,7 +65,8 @@ initializing it. Here are the available options and their default values:
 | Option   | Type     | Default              | Description                                                                                   |
 |----------|----------|----------------------|-----------------------------------------------------------------------------------------------|
 | `config` | `object` | `{}`                 | An object used to initialize the [Babel] transpiler, including [Babel configuration options]. |
-| `filter` | `RegExp` | `/\.(jsx? \| vue)$/` | A regular expression used to match source code files that should be transpiled.               |
+| `filter` | `RegExp` | `/\.(jsx?|vue)($|\?)/` | A regular expression used to match source code files that should be transpiled.               |
+| `transpileDependencies` | `Array<string|RegExp>` | `[]` | A list of dependencies under `node_modules` that should be transpiled. By default files in `node_modules` are ignored; use this option to explicitly include packages (supports exact package names like `"pkg"` or `"@scope/pkg"`, RegExp instances, or regex-like strings `"/^pkg-/"`). |
 
 ## Example
 
@@ -109,7 +110,11 @@ export default defineConfig({
           "@babel/plugin-transform-class-properties"
         ],
       },
-      filter: /\.(jsx? \| vue)$/,
+      filter: /\.(jsx?|vue)($|\?)/,
+      // By default files in node_modules are not transformed. To transpile specific
+      // dependencies (for example some packages published in ESNext), specify them:
+      // transpileDependencies: ['some-es-package', /^@scope\//],
+      transpileDependencies: ['some-es-package'],
     }),
   ],
   resolve: {

@@ -57,7 +57,8 @@ export default {
 | 选项       | 类型       | 默认值                  | 说明                                      |
 |----------|----------|----------------------|-----------------------------------------|
 | `config` | `object` | `{}`                 | 用于初始化 [Babel] 转译器的对象，包含了 [Babel 配置选项] 。 |
-| `filter` | `RegExp` | `/\.(jsx? \| vue)$/` | 用于匹配需要转译的源码文件的正则表达式。                    |
+| `filter` | `RegExp` | `/\.(jsx?|vue)($|\?)/` | 用于匹配需要转译的源码文件的正则表达式。                    |
+| `transpileDependencies` | `Array<string|RegExp>` | `[]` | 指定 `node_modules` 下需要被转译的依赖列表。默认 `node_modules` 中的文件不被转译；使用此选项可以显式包含某些包（支持精确包名，如 `"pkg"` 或 `"@scope/pkg"`，也支持 RegExp 实例或类似 `"/^pkg-/"` 的正则字符串）。 |
 
 ## 示例
 
@@ -98,7 +99,11 @@ export default defineConfig({
           "@babel/plugin-transform-class-properties"
         ],
       },
-      filter: /\.(jsx? \| vue)$/,           // 此参数可以指定需要处理的文件名的正则表达式
+      filter: /\.(jsx?|vue)($|\?)/,         // 此参数可以指定需要处理的文件名的正则表达式
+      // 默认情况下不对 node_modules 下的依赖进行转译。若需转译特定依赖（例如某些以 ESNext 方式发布的包），
+      // 可使用 transpileDependencies 配置显式指定：
+      // transpileDependencies: ['some-es-package', /^@scope\//],
+      transpileDependencies: ['some-es-package'],
     }),
   ],
   resolve: {
