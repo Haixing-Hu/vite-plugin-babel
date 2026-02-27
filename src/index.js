@@ -8,7 +8,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 import * as babel from '@babel/core';
 
-const DEFAULT_FILTER = /\.(jsx?|vue)$/;
+// Vite virtual module IDs may include a query (e.g. *.vue?vue&type=script)
+const DEFAULT_FILTER = /\.(jsx?|vue)($|\?)/;
 
 const babelPlugin = (options = {}) => {
   console.info('[vite-plugin-babel] Loading vite-plugin-babel with options:', options);
