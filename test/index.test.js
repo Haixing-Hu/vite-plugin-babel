@@ -13,6 +13,7 @@ import * as babel from '@babel/core';
 describe('vite-plugin-babel', () => {
   beforeEach(() => {
     vi.restoreAllMocks();
+    vi.clearAllMocks();
   });
 
   it('transforms non-node_modules files matching the filter', () => {

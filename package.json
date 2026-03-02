@@ -45,11 +45,14 @@
     "@babel/core": "^7.29.0"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.28.6",
+    "@babel/plugin-proposal-decorators": "^7.29.0",
     "@qubit-ltd/eslint-config": "^2.0.1",
     "esbuild": "^0.27.3",
     "eslint": "^9.35.0",
     "eslint-plugin-import": "^2.32.0",
-    "vitest": "^4.0.18"
+    "vitest": "^4.0.18",
+    "vue-eslint-parser": "^10.4.0"
   },
   "packageManager": "yarn@4.12.0"
 }

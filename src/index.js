@@ -48,7 +48,7 @@ function matchesTranspileList(moduleId, list) {
           if (re.test(moduleId) || (pkg && re.test(pkg))) {
             return true;
           }
-        } catch (e) {
+        } catch {
           // ignore invalid regex
         }
       } else {
