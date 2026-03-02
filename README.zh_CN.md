@@ -3,7 +3,7 @@
 [![npm package](https://img.shields.io/npm/v/@qubit-ltd/vite-plugin-babel.svg)](https://npmjs.com/package/@qubit-ltd/vite-plugin-babel)
 [![License](https://img.shields.io/badge/License-Apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![English Document](https://img.shields.io/badge/Document-English-blue.svg)](README.md)
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Haixing-Hu/vite-plugin-babel/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/Haixing-Hu/vite-plugin-babel/tree/master)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/qubit-ltd/vite-plugin-babel/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/qubit-ltd/vite-plugin-babel/tree/master)
 
 [vite-plugin-babel] 是专为 [Vite] 构建工具设计的插件，允许你将 [Babel] 转译器集成到你的
 [Vite] 项目中。这赋予了你的项目更强大的能力，如 [JavaScript装饰器提案] 所示。
@@ -153,11 +153,11 @@ export default defineConfig({
 [owlsdepartment 的 vite-plugin-babel]: https://www.npmjs.com/package/vite-plugin-babel
 [vite-plugin-vue]: https://www.npmjs.com/package/@vitejs/plugin-vue
 [Vue]: https://vuejs.org/
-[vue3-class-component]: https://github.com/Haixing-Hu/vue3-class-component
+[vue3-class-component]: https://github.com/qubit-ltd/vue3-class-component
 [create-vue]: https://github.com/vuejs/create-vue
 [Vite]: https://vitejs.dev/
 [Babel]: https://babeljs.io/
 [Babel 配置选项]: https://babeljs.io/docs/options
 [JavaScript 装饰器提案]: https://github.com/tc39/proposal-decorators
-[vue3-class-component-demo-vite]: https://github.com/Haixing-Hu/vue3-class-component-demo-vite
-[GitHub 仓库]: https://github.com/Haixing-Hu/vite-plugin-babel
+[vue3-class-component-demo-vite]: https://github.com/qubit-ltd/vue3-class-component-demo-vite
+[GitHub 仓库]: https://github.com/qubit-ltd/vite-plugin-babel

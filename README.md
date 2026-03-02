@@ -3,7 +3,7 @@
 [![npm package](https://img.shields.io/npm/v/@qubit-ltd/vite-plugin-babel.svg)](https://npmjs.com/package/@qubit-ltd/vite-plugin-babel)
 [![License](https://img.shields.io/badge/License-Apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![中文文档](https://img.shields.io/badge/文档-中文版-blue.svg)](README.zh_CN.md)
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Haixing-Hu/vite-plugin-babel/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/Haixing-Hu/vite-plugin-babel/tree/master)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/qubit-ltd/vite-plugin-babel/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/qubit-ltd/vite-plugin-babel/tree/master)
 
 
 [vite-plugin-babel] is a plugin designed for the [Vite] build tool, enabling you
@@ -170,11 +170,11 @@ This plugin is distributed under the Apache 2.0 license. See the [LICENSE](LICEN
 [owlsdepartment's vite-plugin-babel]: https://www.npmjs.com/package/vite-plugin-babel
 [vite-plugin-vue]: https://www.npmjs.com/package/@vitejs/plugin-vue
 [Vue]: https://vuejs.org/
-[vue3-class-component]: https://github.com/Haixing-Hu/vue3-class-component
+[vue3-class-component]: https://github.com/qubit-ltd/vue3-class-component
 [create-vue]: https://github.com/vuejs/create-vue
 [Vite]: https://vitejs.dev/
 [Babel]: https://babeljs.io/
 [Babel configuration options]: https://babeljs.io/docs/options
 [JavaScript Decorators proposal]: https://github.com/tc39/proposal-decorators
-[vue3-class-component-demo-vite]: https://github.com/Haixing-Hu/vue3-class-component-demo-vite
-[GitHub repository]: https://github.com/Haixing-Hu/vite-plugin-babel
+[vue3-class-component-demo-vite]: https://github.com/qubit-ltd/vue3-class-component-demo-vite
+[GitHub repository]: https://github.com/qubit-ltd/vite-plugin-babel
