@@ -1,6 +1,6 @@
 {
   "name": "@qubit-ltd/vite-plugin-babel",
-  "version": "1.6.6",
+  "version": "1.6.7",
   "description": "A simple vite plugin to support Babel.",
   "author": "Haixing Hu",
   "license": "Apache-2.0",
@@ -39,7 +39,7 @@
     "build": "node esbuild.mjs",
     "test": "vitest --run",
     "test:watch": "vitest --watch",
-    "deploy": "npm run lint && npm run build && npm publish --registry='https://registry.npmjs.org/' --access public"
+    "deploy": "npm run lint && npm run build && npm publish --@qubit-ltd:registry='https://registry.npmjs.org/' --access public"
   },
   "dependencies": {
     "@babel/core": "^7.29.0"
@@ -47,7 +47,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.28.6",
     "@babel/plugin-proposal-decorators": "^7.29.0",
-    "@qubit-ltd/eslint-config": "^2.0.1",
+    "@qubit-ltd/eslint-config": "^2.0.2",
     "esbuild": "^0.27.3",
     "eslint": "^9.35.0",
     "eslint-plugin-import": "^2.32.0",
